@@ -1,0 +1,314 @@
+#SOMEDAY
+#MUSECORE  https://musescore.com/user/4773516/scores/6296004
+#YOUTUBE https://www.youtube.com/watch?v=3yy-dKTmyOo
+use_synth :piano
+use_bpm 100
+r = 1
+s = 0.5
+x = 0
+
+define :main_bowl do |b1, b2, x1, x2,|
+  play :a3, sustain:100, amp: 1.35
+  play b1, sustain:100, amp: 1.35
+  play b2, sustain:100, amp: 1.35
+  
+  play x1
+  sleep 0.5
+  play :d4
+  sleep 0.25
+  play :d4
+  sleep 0.25
+  play :d4
+  sleep 0.5
+  play :d4
+  sleep 0.25
+  play :d4
+  sleep 0.25
+  play :d4
+  sleep 0.25
+  play :d4
+  sleep 0.25
+  play :a3
+  sleep 1
+  play x2
+  sleep 0.5
+end
+define :notes do
+  
+  2.times do
+    main_bowl :f3, :d3, :d4,:d4
+    main_bowl :e3, :c3, :c4,:d4
+    
+    play :a3, sustain:100, amp: 1.35
+    play :e3, sustain:100, amp: 1.35
+    play :c3, sustain:100, amp: 1.35
+    
+    play :c4
+    sleep 0.5
+    play :d4
+    sleep 0.25
+    play :d4
+    sleep 0.25
+    play :d4
+    sleep 0.5
+    play :d4
+    sleep 0.25
+    play :d4
+    sleep 0.25
+    play :d4
+    sleep 0.25
+    play :d4
+    sleep 0.25
+    play :a3
+    sleep 1
+    play :d4
+    sleep 0.5
+    
+    play  :b3, sustain:100, amp: 1.35
+    play  :g3, sustain:100, amp: 1.35
+    play  :e3, sustain:100, amp: 1.35
+    
+    play :b4
+    sleep 0.5
+    play :a4
+    sleep 0.5
+    play :es4
+    sleep 0.5
+    play :a4
+    sleep 0.5
+    
+    play :fs4
+    sleep 1
+    play :a4
+    sleep 1
+    
+    play  :b3, sustain:100, amp: 1.35
+    play  :g3, sustain:100, amp: 1.35
+    play  :d3, sustain:100, amp: 1.35
+    
+    play :b4
+    sleep 0.5
+    play :a4
+    sleep 0.5
+    play :es4
+    sleep 0.5
+    play :a4
+    sleep 0.5
+    
+    play :fs4
+    sleep 1
+    play :a4
+    sleep 1
+  end
+  
+  
+  play  :b3, sustain:100, amp: 1.35
+  play  :g3, sustain:100, amp: 1.35
+  play  :d3, sustain:100, amp: 1.35
+  
+  play :b4
+  sleep 0.5
+  play :a4
+  sleep 0.5
+  play :fs4
+  sleep 0.5
+  play :a4
+  sleep 0.51
+  play :fs4
+  sleep 1
+  play :a4
+  sleep 1
+  
+  play  :d3, sustain:2
+  play  :g2, sustain:2
+  sleep 1
+  play :b4
+  play :d4
+  sleep 1
+  play  :d3, sustain:2
+  play  :g2, sustain:2
+  play :a4
+  play :c4
+  sleep 2
+  
+  play  :f3, sustain:2
+  play  :b2, sustain:2
+  play :a4
+  sleep 0.33
+  play :d4
+  sleep 0.22
+  play :a4
+  sleep 0.33
+  play :a4
+  sleep 0.33
+  play :d4
+  sleep 0.33
+  play :a4
+  sleep 0.33
+  
+  play  :a3, sustain:2
+  play  :d3, sustain:2
+  play :a4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  play :e4
+  sleep 0.5
+  play :fs4
+  sleep 0.5
+  
+  play  :d3, sustain:2
+  play  :g2, sustain:2
+  sleep 1
+  play :b4
+  play :d4
+  sleep 1
+  play  :e3, sustain:2
+  play  :a2, sustain:2
+  play :a4
+  play :c4
+  sleep 2
+  
+  play  :f3, sustain:2
+  play  :b2, sustain:2
+  play :a4
+  sleep 0.33
+  play :d4
+  sleep 0.22
+  play :a4
+  sleep 0.33
+  play :a4
+  sleep 0.33
+  play :d4
+  sleep 0.33
+  play :a4
+  sleep 0.33
+  
+  play  :e3, sustain:2
+  play  :a2, sustain:2
+  play :a4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  play :fs4
+  sleep 0.5
+  play :e4
+  sleep 0.5
+  
+  play  :d3, sustain:2
+  play  :g2, sustain:2
+  sleep 1
+  play :d4
+  sleep 0.33333
+  play :d4
+  sleep 0.33333
+  play :d4
+  sleep 0.33333
+  
+  play :e4
+  play  :e3, sustain:2
+  play  :a2, sustain:2
+  sleep 0.5
+  play :fs4
+  sleep 0.5
+  
+  play :e4
+  sleep 1
+  sleep 1
+  play  :f3, sustain:2
+  play  :b2, sustain:2
+  play :d4
+  sleep 0.33333
+  play :d4
+  sleep 0.33333
+  play :d4
+  sleep 0.33333
+  
+  play :e4
+  play  :a3, sustain:2
+  play  :d3, sustain:2
+  sleep 0.5
+  play :fs4
+  sleep 0.5
+  play :e4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  
+  play  :g2, sustain:2
+  play  :d3, sustain:2
+  sleep 1
+  play :d4
+  sleep 1
+  play :c4
+  play  :a3, sustain:2
+  play  :a2, sustain:2
+  sleep 1
+  play :fs4
+  sleep 1
+  
+  play :d4
+  play  :f3, sustain:2
+  play  :b2, sustain:2
+  sleep 2
+  play :a4
+  play  :e3, sustain:3
+  play  :a2, sustain:3
+  sleep 0.5
+  play :g4
+  sleep 0.25
+  play :fs4
+  sleep 0.25
+  play :e4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+end
+
+
+live_loop :notesonside do
+  1.times do
+    notes
+  end
+  stop
+end
+sleep 4
+live_loop :bass do
+  8.times do
+    sample :drum_bass_soft
+    sleep 4
+    sample :drum_bass_hard
+    sleep 4
+  end
+  stop
+end
+
+sleep 8
+live_loop :humming do
+  12.times do
+    sample :ambi_glass_hum
+    sleep 5
+  end
+  stop
+end
+
+s = 0.5
+x = 0.1
+define :panup do | a|
+  play 43, amp: a, pan:1
+  sleep s
+  play 43, amp: a, pan:-1
+  sleep s
+end
+live_loop :UPSANDDOWN do
+  3.times do
+    10.times do
+      panup x
+      x = x + 0.1
+    end
+    x = 0
+  end
+  stop
+end
