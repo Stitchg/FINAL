@@ -1,0 +1,133 @@
+
+# MY Jeopardy Theme Song
+use_bpm 120
+s = 0.5
+
+
+define :the_notes do
+  play :A4
+  sleep 1
+  play :D5
+  sleep 1
+  play :A4
+  sleep 1
+  play :D4
+  sleep 1
+  
+  
+  play :A4
+  sleep 1
+  play :D5
+  sleep 1
+  play :A4
+  sleep 2
+  
+  
+  play :A4
+  sleep 1
+  play :D5
+  sleep 1
+  play :A4
+  sleep 1
+  play :D5
+  sleep 1
+  
+  
+  play :Fs5
+  sleep 1
+  play :r
+  sleep 0.5
+  play :E5
+  sleep 0.5
+  play :D5
+  sleep 0.5
+  play :Cs5
+  sleep 0.5
+  play :B4
+  sleep 0.5
+  play :Bb4
+  sleep 0.5
+end
+define :panupdown do
+  play 43, amp: 0.1, pan:1
+  sleep s
+  play 43, amp: 0.2, pan:-1
+  sleep s
+  play 43, amp: 0.3, pan:1
+  sleep s
+  play 43, amp: 0.4, pan:-1
+  sleep s
+  play 43, amp: 0.5, pan:1
+  sleep s
+  play 43, amp: 0.6, pan:-1
+  sleep s
+  play 43, amp: 0.7, pan:1
+  sleep s
+  play 43, amp: 0.8, pan:-1
+  sleep s
+  play 43, amp: 0.9, pan:1
+  sleep s
+  play 43, amp: 1, pan:-1
+  sleep s
+  
+  play 43, amp: 1, pan:1
+  sleep s
+  play 43, amp: 0.9, pan:-1
+  sleep s
+  play 43, amp: 0.8, pan:1
+  sleep s
+  play 43, amp: 0.7, pan:-1
+  sleep s
+  play 43, amp: 0.6, pan:1
+  sleep s
+  play 43, amp: 0.5, pan:-1
+  sleep s
+  play 43, amp: 0.4, pan:1
+  sleep s
+  play 43, amp: 0.3, pan:-1
+  sleep s
+  play 43, amp: 0.2, pan:1
+  sleep s
+  play 43, amp: 0.1, pan:-1
+  sleep s
+end
+
+live_loop :keep do
+  3. times do
+    the_notes
+  end
+  stop
+end
+sleep 4
+with_fx :distortion do
+  live_loop :bass do
+    32.times do
+      sleep 1
+      sample :drum_bass_hard, amp: 0.2
+      sleep 0.1
+    end
+    stop
+  end
+end
+sleep 4
+live_loop :splash do
+  8.times do
+    sleep 4
+    use_synth :tb303
+    sample :drum_splash_soft, amp: 0.2
+    sleep 0.1
+  end
+  stop
+end
+sleep 6
+live_loop :dunnn do
+  3.16666.times do
+    panupdown
+  end
+  stop
+end
+
+
+sleep 33
+sample "C:/Users/jose_gutierrez/Desktop/Boom sound effect.mp3", amp: 0.6
+sleep 2
