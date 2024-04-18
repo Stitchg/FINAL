@@ -126,8 +126,23 @@ live_loop :dunnn do
   end
   stop
 end
+i = 0
+use_synth :fm
+use_synth_defaults sustain: 0.25
+notes = [43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33]
+sleekp = [ 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ]
 
+live_loop :downaas do
+  11. times do
+    play(notes [i])
+    sleep(sleekp [i])
+    i = i + 1
+  end
+  i = 0
+  stop
+end
 
 sleep 33
 sample "C:/Users/jose_gutierrez/Desktop/Boom sound effect.mp3", amp: 0.6
 sleep 2
+
