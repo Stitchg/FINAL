@@ -302,6 +302,7 @@ define :panup do | a|
   play 43, amp: a, pan:-1
   sleep s
 end
+
 live_loop :UPSANDDOWN do
   3.times do
     10.times do
@@ -310,5 +311,21 @@ live_loop :UPSANDDOWN do
     end
     x = 0
   end
+  stop
+end
+
+i = 0
+use_synth :fm
+use_synth_defaults sustain: 0.25
+notes = [43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33]
+sleekp = [ 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ]
+
+live_loop :downaas do
+  11. times do
+    play(notes [i])
+    sleep(sleekp [i])
+    i = i + 1
+  end
+  i = 0
   stop
 end
